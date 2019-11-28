@@ -1,0 +1,64 @@
+{
+  "name": "electron-quick-start",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win --x64"
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^7.1.2",
+    "electron-builder": "^22.1.0"
+  },
+  "build": {
+    "productName": "autoupdater-demo",
+    "appId": "**",
+    "directories": {
+      "output": "build"
+    },
+    "publish": [
+      {
+        "provider": "generic",
+        "url": "http://localhost:8000/download/"
+      }
+    ],
+    "files": [
+      "./main.js",
+      "./package.json",
+      "./dist/**"
+    ],
+    "mac": {
+      "icon": "build/icons/icon.icns",
+      "artifactName": "${productName}_setup_${version}.${ext}"
+    },
+    "win": {
+      "icon": "build/icons/icon.ico",
+      "artifactName": "${productName}_setup_${version}.${ext}"
+    }
+  },
+  "nsis": {
+    "oneClick": true,
+    "perMachine": true,
+    "allowElevation": true,
+    "allowToChangeInstallationDirectory": true,
+    "createDesktopShortcut": true,
+    "runAfterFinish": true,
+    "installerIcon": "./build/icon.ico",
+    "uninstallerIcon": "./build/icon.ico"
+  },
+  "dependencies": {
+    "electron-updater": "^4.2.0",
+    "express": "^4.17.1"
+  }
+}

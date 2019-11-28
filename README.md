@@ -1,11 +1,10 @@
 # electron-nuxt
 ##### 简介：打包好的nuxt.js运行在electron,并且electron-builder打包成exe，安装后实现electron自动更新
 
-##### 初始化项目
+#### 初始化项目
 **npm install**
 
 ### 1.打包electron生成新的exe安装包：npm run dist
-<br/>
 ### 2.使用simplehttpserver开启存放打包好的exe安装包与yml文件的本地服务(打包目录里有这两个文件)
 <br/>
        **`安装simplehttpserver： npm i simplehttpserver -g`**

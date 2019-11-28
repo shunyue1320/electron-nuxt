@@ -5,7 +5,7 @@
 **npm install**
 
 1.打包electron生成新的exe安装包：npm run dist
-2. 使用simplehttpserver开启存放打包好的exe安装包与yml文件的本地服务(打包目录里有这两个文件)
+2.使用simplehttpserver开启存放打包好的exe安装包与yml文件的本地服务(打包目录里有这两个文件)
 <br/>
         `安装simplehttpserver： npm i simplehttpserver -g`
         `开启服务：simplehttpserver 文件夹名称 默认开启8000端口`

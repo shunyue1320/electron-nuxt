@@ -18,5 +18,3 @@ $ simplehttpserver 文件夹名称
 
 # 3.安装旧版本的exe文件，就会自动检测更新啦！
 ```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
